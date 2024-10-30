@@ -362,3 +362,65 @@ p {
 .testimonial-section .carousel-indicators button.active {
 	opacity: 1;
 }
+
+/* FAQ section Design */
+.faq h4 span {
+	color: var(--primary-color);
+	font-size: 1.8rem;
+	margin-right: 0.315rem;
+}
+
+.book-food {
+	width: 100%;
+	background: url('/images/bg/bg-3.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0 71.954px;
+	padding: 4.536rem 0;
+}
+
+/* section-8 */
+.newsletter {
+	width: 55%;
+	margin: 0 auto;
+}
+
+.newsletter .form-control {
+	height: 3.225rem;
+	padding: 0 1.23rem;
+	font-size: 0.976rem;
+	width: 100%;
+	border-radius: 0;
+	background: transparent;
+	border: 0.186rem solid var(--text-gray);
+	color: var(--black-color);
+	font-weight: 600;
+}
+
+.newsletter .form-control:hover,
+.newsletter .form-control:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: var(--primary-color);
+}
+
+/* footer */
+.footer {
+	background-color: var(--primary-color);
+}
+
+.footer .footer-link {
+	font-size: 1rem;
+	color: var(--white-color);
+	padding: 0 1.874rem;
+}
+
+.footer .footer-link a :hover {
+	color: var(--white-color) !important;
+}
+
+.footer a i {
+	font-size: 1.5rem;
+	color: var(--white-color);
+	padding: 0 0.91rem;
+}
