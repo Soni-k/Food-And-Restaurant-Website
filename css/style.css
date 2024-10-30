@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+	outline: 0 !important;
+	outline-offset: 0;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--primary-color);
+}
+
+
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary-color: #AB2C48;
+	--secondry-color: #43121d;
+	--third-color: #f98169;
+	--white-color: #f8f5f5;
+	--test-gray: #999;
+	--black-color: #000;
+	--primary-font: 'Roboto', sans-serif;
+	--secondry-font: 'Quicksand', sans-serif;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--primary-color);
+	font-size: 100%;
+	font-weight: 400;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+	width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+}
+
+/* custom css design */
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 3rem;
+	color: var(--primary-color);
+}
+
+h2 {
+	font-size: 2.25rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-family: var(--secondry-font);
+	line-height: 3rem;
+	color: var(--primary-color);
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: capitalize;
+	font-family: var(--secondry-font);
+	margin-bottom: 0.5rem;
+	color: var(--secondry-color);
+}
+
+h5 {
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-family: var(--secondry-font);
+	margin-bottom: 0.5rem;
+	color: var(--primary-color);
+}
+
+p {
+	font-size: 1rem;
+	color: var(--test-gray);
+	font-weight: 400;
+	line-height: 1.75rem;
+	letter-spacing: 1px;
+}
+
+.main-btn {
+	display: inline-block;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 0.625rem 1.875rem;
+	line-height: 1.5625rem;
+	border: 2px solid var(--primary-color);
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+
+}
+
+.white-btn {
+	display: inline-block;
+	background-color: var(--white-color);
+	padding: 0.625rem 1.875rem;
+	line-height: 1.5625rem;
+	border: 2px solid var(--primary-color);
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+}
+
+.main-btn:hover {
+	background-color: transparent;
+	color: var(--primary-color);
+}
+
+.white-btn:hover {
+	background-color: transparent;
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.wrapper {
+	padding-top: 8.25rem;
+	padding-bottom: 8.25rem;
+}
+
+.text-content {
+	width: 70%;
+	margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+	color: var(--white-color);
+}
+
+/* Header Design */
+
+.navigation-wrap {
+	position: fixed;
+	/* position: sticky;
+	top: 0; */
+	width: 100%;
+	left: 0;
+	z-index: 1000;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+	padding: 0 0.625rem;
+	transition: all 200ms linear;
+}
+
+/* .navbar-toggler:focus {
+	outline: unset;
+	border: unset;
+	box-shadow: none;
+} */
+
+.nav-link {
+	font-size: 5.934rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	color: var(--primary-color);
+}
+
+.navigation-wrap .main-btn {
+	padding: 0.3125rem 1.437rem;
+	box-shadow: none;
+	margin-left: 0.624rem;
+}
+
+/* change navbar styling scroll-on */
+.navigation-wrap.scroll-on {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: var(--white-color);
+	box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+	transition: all .15s ease-in-out 0s;
+}
+
+/* top-banner */
+.top-banner {
+	width: 100%;
+	background: url('../images/bg/bg-1.jpg') no-repeat center;
+	/* background-repeat: no-repeat;
+	background-position: center; */
+	background-size: cover;
+
+	padding: 10.875rem 0 9.375rem;
+}
+
+/* Counter Design */
+.counter-section {
+	background-color: #AB2C48;
+	padding: 1.5rem 0;
+}
+
+.counter-section p {
+	color: var(--white-color);
+	text-transform: uppercase;
+}
+
+/* about-section */
+
+.about-section {
+	background: var(--white-color);
+}
+
+
+.about-section .card img {
+	border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+	padding-left: 2rem;
+}
