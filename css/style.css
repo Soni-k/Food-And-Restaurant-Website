@@ -370,13 +370,14 @@ p {
 	margin-right: 0.315rem;
 }
 
+/* parallax effect */
 .book-food {
 	width: 100%;
 	background: url('/images/bg/bg-3.jpg') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: 0 71.954px;
-	padding: 4.536rem 0;
+	background-position: 0 71.9125px;
+	padding: 4.375rem 0;
 }
 
 /* section-8 */
