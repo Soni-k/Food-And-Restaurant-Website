@@ -38,7 +38,7 @@ ol {
 	--secondry-color: #43121d;
 	--third-color: #f98169;
 	--white-color: #f8f5f5;
-	--test-gray: #999;
+	--text-gray: #999;
 	--black-color: #000;
 	--primary-font: 'Roboto', sans-serif;
 	--secondry-font: 'Quicksand', sans-serif;
@@ -248,4 +248,117 @@ p {
 
 .about-section .text-sec {
 	padding-left: 2rem;
+}
+
+/* food-type section */
+.food-type {
+	padding: 3.25rem;
+}
+
+.food-type ul li {
+	position: relative;
+	font-size: 1rem;
+	color: var(--text-gray);
+	line-height: 32px;
+	margin-left: 30px;
+}
+
+.food-type ul li::before {
+	position: absolute;
+	left: -2.34rem;
+	color: var(--primary-color);
+	display: inline-block;
+	font-size: 1.34rem;
+	font-family: "Font Awesome 5 Free";
+	content: "\f00c";
+	padding-right: 3px;
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+.story-section {
+	width: 100%;
+	height: 28.54rem;
+	background: url('../images/bg/bg-2.jpg') no-repeat center;
+	background-size: cover;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.story-section h2 {
+	color: var(--primary-color);
+}
+
+/* explore food */
+.explor-food .card {
+	border: none;
+	background-color: transparent;
+	border-radius: 0.945rem;
+}
+
+.explor-food .card img {
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.explor-food .card span {
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: var(--primary-color);
+	padding-bottom: 1rem;
+	border-bottom: 0.0625rem solid #eee;
+}
+
+.explor-food .card span del {
+	color: var(--text-gray);
+	margin-left: 1.54rem;
+}
+
+/* Section-5 Testimonial */
+.testimonial-section {
+	background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-item {
+	margin-top: 3rem;
+	padding: 10rem 3.125rem;
+	background-color: var(--white-color);
+	border-radius: 0.935rem;
+	text-align: center;
+}
+
+.testimonial-section .carousel-caption img {
+	max-width: 5rem;
+	border-radius: 50%;
+	padding: 0.342rem;
+}
+
+.testimonial-section .carousel-caption p {
+	font-size: 1.34rem;
+	line-height: 2.56rem;
+	padding: 0 11% 0.643rem;
+	color: var(--text-gray);
+}
+
+.testimonial-section .carousel-caption h5 {
+	color: var(--primary-color);
+}
+
+.testimonial-section .carousel-indicators {
+	bottom: -2.872rem;
+}
+
+.testimonial-section .carousel-indicators button {
+	width: 15px;
+	height: 15px;
+	outline: none;
+	border-radius: 50%;
+	border: none;
+	margin-right: 1rem;
+	opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button.active {
+	opacity: 1;
 }
